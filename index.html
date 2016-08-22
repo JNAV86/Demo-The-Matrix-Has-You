@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--CSS Dependencies-->
+<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/cursor.css" rel="stylesheet">
+<!--/CSS Dependencies-->
+
+<style>
+  body{background-color:	#080808  ;}
+  code{background-color:	#080808  ;}
+  header{height:5em;background-color:	#000  ;}
+  .typed{color:green;}
+  .typed-cursor{color:green;}
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top " style="background-color:black;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Unplugged</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Terminal</a></li>
+        <li><a href="#">Awareness</a></li>
+        <li><a href="#">Determination</a></li>
+        <li><a href="#">Intelligence</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container-fluid">
+
+  <code><span class="typed"></span></code>
+  <span class="typed-cursor"></span>
+
+
+
+
+</div>
+
+<!--JS Dependencies-->
+<script src="jquery-2.2.3.js"></script>
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script src="typed.js"></script>
+<!--/JS Dependencies-->
+
+<script>
+    $(function(){
+        $(".typed").typed({
+            strings: ["wake up neo."],
+            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 50,
+            // time before typing starts
+            startDelay: 0,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: false,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function() {},
+            // starting callback function before each string
+            preStringTyped: function() {},
+            //callback for every typed string
+            onStringTyped: function() {},
+            // callback for reset
+            resetCallback: function() {}
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
